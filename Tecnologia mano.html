@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Tecnlogia en tu mano</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <img src="IMAGENES1/logo.png" alt="logo de la compañia"
+            class="logo-img">
+            <h2 class="logo-nombre">FLOPPATech
+            </h2>
+        </a>
+        <nav>
+            <a href="Menú.html" class="nav-link">Inicio</a>
+            <a href="Sobre nosotros.html" class="nav-link">Sobre nosotros</a>
+            <a href="Login.html" class="nav-link">Registrarse/Iniciar sesion</a>
+        
+        <div class="dropdown">
+                <a href="#" class="nav-link">Línea de productos</a>
+                <div class="dropdown-content">
+                    <a href="Potencia.html">Potencia sin limites</a>
+                    <a href="Conexion.html">Conexion sin limites</a>
+                    <a href="Control.html">Control y confort</a>
+                    <a href="Tecnologia mano.html">Tecnologia en tu mano</a>
+                    <a href="Promociones.html">Promociones</a>
+                </div>
+        </nav>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Luces LED RGB Inteligente de escritorio bluetooth con Control</p>
+                    <span class="precio">$499.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Bascula Digital Corporal y Muscular, Balanza Inteligente</p>
+                    <span class="precio">$395.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">LEAEYFE - Acondicionador de aire portátil.
+                    </p>
+                    <span class="precio">$1,539.26</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">VEIKK VK1060 Pro Tableta de Dibujo, Tableta gráfica</p>
+                    <span class="precio">$1,499.99</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">UGEE Tableta Gráfica S640, 6,3x4 Pulgadas Tableta de Dibujo Portátil Ultradelgada</p>
+                    <span class="precio">$599.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Kingston SSD Externo XS1000 Capacidad </p>
+                    <span class="precio">$1,251.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CITYORK Paquete de 8 Pilas AA de 3000 mAh con 8 baterías Recargables</p>
+                    <span class="precio">$895.37</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Paquete de 10 unidades flash USB 2.0 Enfain de 1 GB </p>
+                    <span class="precio">$350.14</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="IMAGEN/potencia1.jpg" alt="" id="img">
+                <h2 id="modelo"></h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio"></span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANT.</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

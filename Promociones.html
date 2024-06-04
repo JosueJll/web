@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Promociones</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="IMAGENES1/logo.png" alt="logo de la compañia"
+            class="logo">
+            <h2 class="logo-nombre">FLOPPATech
+            </h2>
+        </a>
+        <nav>
+            <a href="Menú.html" class="nav-link">Inicio</a>
+            <a href="Sobre nosotros.html" class="nav-link">Sobre nosotros</a>
+            <a href="Login.html" class="nav-link">Registrarse/Iniciar sesion</a>
+        
+        <div class="dropdown">
+                <a href="#" class="nav-link">Línea de productos</a>
+                <div class="dropdown-content">
+                    <a href="Potencia.html">Potencia sin limites</a>
+                    <a href="Conexion.html">Conexion sin limites</a>
+                    <a href="Control.html">Control y confort</a>
+                    <a href="Tecnologia mano.html">Tecnologia en tu mano</a>
+                    <a href="Promociones.html">Promociones</a>
+                </div>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/promocion1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        Control inalámbrico Xbox</p>
+                    <span class="precio">-30% $1,119</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/promocion2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>
+                        Redlemon Control para Nintendo Switch</p>
+                    <span class="precio">-15% $679.00</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/conexion1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        Green Leaf Ratón Inalámbrico
+                    </p>
+                    <span class="precio">-20% $399.00</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Apple 2022 Laptop MacBook Air</p>
+                    <span class="precio">-20 % $23,799.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/promocion3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Smartwatch Reloj Inteligente, compatible con IOS, Android.
+                    </p>
+                    <span class="precio">-20 % $499.00</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/promocion4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        HUAWEI Band 9 AMOLED </p>
+                    <span class="precio">-40% $719.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Luces LED RGB Inteligente </p>
+                    <span class="precio">-50% $400.00</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mano2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bascula Digital Corporal</p>
+                    <span class="precio">-40% $600.00</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="IMAGEN/potencia1.jpg" alt="" id="img">
+                <h2 id="modelo"></h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio"></span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANT.</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

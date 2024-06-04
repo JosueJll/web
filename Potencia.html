@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Potencia sin limites</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="IMAGENES1/logo.png" alt="logo de la compañia"
+            class="logo-img">
+            <h2 class="logo-nombre">FLOPPATech
+            </h2>
+        </a>
+        <nav>
+            <a href="Menú.html" class="nav-link">Inicio</a>
+            <a href="Sobre nosotros.html" class="nav-link">Sobre nosotros</a>
+            <a href="Login.html" class="nav-link">Registrarse/Iniciar sesion</a>
+        
+        <div class="dropdown">
+                <a href="#" class="nav-link">Línea de productos</a>
+                <div class="dropdown-content">
+                    <a href="Potencia.html">Potencia sin limites</a>
+                    <a href="Conexion.html">Conexion sin limites</a>
+                    <a href="Control.html">Control y confort</a>
+                    <a href="Tecnologia mano.html">Tecnologia en tu mano</a>
+                    <a href="Promociones.html">Promociones</a>
+                </div>
+        </nav>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Apple 2022 Laptop MacBook Air</p>
+                    <span class="precio">-5% $23,799.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Apple iPad, Plateado.</p>
+                    <span class="precio">-5% $2,885.58</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Asus TUF Gaming F15
+                    </p>
+                    <span class="precio">-7% $15,999.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">ZOTAC Gaming GeForce RTX 4060</p>
+                    <span class="precio">$5,761.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Zotac Gaming GeForce RTX 3070 Twin Edge LHR</p>
+                    <span class="precio">$19,086.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">AMD Procesador Ryzen™ 5 5600G </p>
+                    <span class="precio">$2,290.32</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">YEYIAN Gabinete Gamer Lancer, Panel Malla y Cristal Templado.</p>
+                    <span class="precio">$1,059.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/potencia8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Intel Procesador Core i7-12700K, S-1700, 5.00GHz.</p>
+                    <span class="precio">$5,226.21</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="IMAGEN/potencia1.jpg" alt="" id="img">
+                <h2 id="modelo"></h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio"></span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANT.</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos3.css">
+    <title>CALZADO DEPORTIVO</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="IMAGENES1/logo.png" alt="logo de la compañia"
+            class="logo-img">
+            <h2 class="logo-nombre">FLOPPATech
+            </h2>
+        </a>
+            <nav>
+                <a href="Menú.html" class="nav-link">Inicio</a>
+                <a href="Sobre nosotros.html" class="nav-link">Sobre nosotros</a>
+                <a href="Login.html" class="nav-link">Registrarse/Iniciar sesion</a>
+            
+            <div class="dropdown">
+                    <a href="#" class="nav-link">Línea de productos</a>
+                    <div class="dropdown-content">
+                        <a href="Potencia.html">Potencia sin limites</a>
+                        <a href="Conexion.html">Conexion sin limites</a>
+                        <a href="Control.html">Control y confort</a>
+                        <a href="Tecnologia mano.html">Tecnologia en tu mano</a>
+                        <a href="Promociones.html">Promociones</a>
+                    </div>
+                </header>
+            </nav>
+
+            <section class="contenido">
+                <div class="mostrador" id="mostrador">
+                    <div class="fila">
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="IMAGEN/conexion1.jpg" alt="">
+                            </div>
+                            <p class="descripcion">Green Leaf Ratón Inalámbrico</p>
+                            <span class="precio">-20% $399.00 </span>
+                        </div>
+                <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                <div class="seleccion" id="seleccion">
+                    <div class="cerrar" onclick="cerrar()">
+                        &#x2715
+                    </div>
+                    <div class="info">
+                        <img src="IMAGEN/conexion1.jpg" alt="" id="img">
+                        <h2 id="modelo">Green Leaf</h2>
+                        <p id="descripcion"> Conexión inalámbrica de 10 metros. Receptor USB de 2. 4 GHz una amplia conexión entre los equipos. Con 3 botones de alta utilidad.
+                    </p>
+        
+                        <span class="precio" id="precio">-20% $399.00  </span>
+        
+                        <div class="fila">
+                            <div class="size">
+                                <label for="">CANT</label>
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <button>AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="script.js"></script>
+
+            <div class="contenedor">
+                <a href="OFERTA2.html" class="OFERTA2">
+                    <img src="IMAGEN/ipad1.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Apple Ipad
+                    </h4>
+                </a>
+                
+                <a href="OFERTA4.html" class="OFERTA2">
+                    <img src="IMAGEN/potencia1.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">MacBook
+                    </h4>
+                </a>
+                <a href="OFERTA1.html" class="OFERTA2">
+                    <img src="IMAGENES1/AUDI1.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Mouse
+                    </h4>
+                </a>
+                <a href="OFERTA5.html" class="OFERTA2">
+                    <img src="IMAGEN/potencia6.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">AMD Procesador Ryzen
+                    </h4>
+                </a>
+                <a href="OFERTA6.html" class="OFERTA2">
+                    <img src="IMAGEN/potencia8.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Intel Procesador Core i7
+                    </h4>
+                </a>
+                <a href="OFERTA7.html" class="OFERTA2">
+                    <img src="IMAGEN/audi1.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Audifonos</h4>
+                </a>
+                <a href="OFERTA8.html" class="OFERTA2">
+                    <img src="IMAGEN/mano1.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Luces led</h4>
+                </a>
+                <a href="OFERTA9.html" class="OFERTA2">
+                    <img src="IMAGEN/mano2.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Bascula</h4>
+                </a>
+                <a href="OFERTA10.html" class="OFERTA2">
+                    <img src="IMAGEN/audi3.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Audifonos</h4>
+                </a>
+                <a href="OFERTA11.html" class="OFERTA2">
+                    <img src="IMAGEN/control6.jpg" alt="producto"
+                    class="producto-img">
+                    <h4 class="producto-nombre">Control</h4>
+                </a>
+    </div>
+</body>
+</html>

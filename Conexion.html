@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Conexion sin limites</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="IMAGENES1/logo.png" alt="logo de la compañia"
+            class="logo">
+            <h2 class="logo-nombre">FLOPPATech
+            </h2>
+        </a>
+        <nav>
+            <a href="Menú.html" class="nav-link">Inicio</a>
+            <a href="Sobre nosotros.html" class="nav-link">Sobre nosotros</a>
+            <a href="Login.html" class="nav-link">Registrarse/Iniciar sesion</a>
+        
+        <div class="dropdown">
+                <a href="#" class="nav-link">Línea de productos</a>
+                <div class="dropdown-content">
+                    <a href="Potencia.html">Potencia sin limites</a>
+                    <a href="Conexion.html">Conexion sin limites</a>
+                    <a href="Control.html">Control y confort</a>
+                    <a href="Tecnologia mano.html">Tecnologia en tu mano</a>
+                    <a href="Promociones.html">Promociones</a>
+                </div>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/audi.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        Sony WF-L900 </p>
+                    <span class="precio">$3,210.53</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/audi1.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>
+                        HIFIMAN HE400SE</p>
+                    <span class="precio">$2,239.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/audi2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        Skullcandy Hesh ANC
+                    </p>
+                    <span class="precio">$2,257.47</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/audi3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">JBL Tune 510BT</p>
+                    <span class="precio">$1000.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/conexion1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">UGREEN Ratón Inalámbrico, Bluetooth USB 2.4G
+                    </p>
+                    <span class="precio">$399.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/mouse1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">
+                        UGREEN Ratón Bluetooth </p>
+                    <span class="precio">$2,290.32</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/teclado1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Merdia Teclado mecánico </p>
+                    <span class="precio">$1,059.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMAGEN/conexion2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Skullcandy Smokin' Buds Auriculares In-Ear Inalámbricos, 20 h de Autonomía.</p>
+                    <span class="precio">$5,226.21</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="IMAGEN/potencia1.jpg" alt="" id="img">
+                <h2 id="modelo"></h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio"></span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANT.</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
